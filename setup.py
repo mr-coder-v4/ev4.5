@@ -24,6 +24,7 @@ requirements = [
     "telethon",
     "aiofiles",
     "aiohttp",
+    "uvloop",
     "opencv-python-headless",
     "yt_dlp",
     "requests",
