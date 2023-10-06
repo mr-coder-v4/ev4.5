@@ -1,6 +1,8 @@
 import math
 import time
 import asyncio
+import uvloop
+asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 from .FasterTg import upload_file, download_file
 
