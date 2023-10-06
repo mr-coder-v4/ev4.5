@@ -2,6 +2,8 @@
 # Copyright (C) 2021-2022 Tulir Asokan
 
 import asyncio
+import uvloop
+asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 import hashlib
 import logging
 import math
