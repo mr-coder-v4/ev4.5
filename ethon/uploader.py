@@ -4,6 +4,8 @@ import re
 import os
 import subprocess
 import asyncio
+import uvloop
+asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 async def bash(cmd):
     cmd_ = cmd.split()
